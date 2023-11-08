@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swa');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Add some styles for body*/
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F5F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    position: relative;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.09);
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.wavy{
+    height: 80px;
+    background-color: red;
+    border-radius: 0 80% 0;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+}
+.waveRight{
+    height: 100px;
+    width: 50%;
+    background-color: green;
+}
+.waveLeft{
+    height: 100px;
+    width: 50%;
+    background-color: blue;
+}
+.title{
+    font-size: 18px;
+
+}
+.corps{
+    font-size: 14px;
+
+}
+.small{
+    position: relative;
+    font-size: 12px;
+}
+.corps, .small, hr{
+    color: #6C727F
+}
+hr{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    right: 0;
+    background-color: #6c727f85;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
